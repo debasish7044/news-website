@@ -1,0 +1,131 @@
+/* navigation */
+#main-nav .social {
+  display: none;
+}
+
+#main-nav .container {
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+#main-nav .logo,
+#main-nav ul {
+  justify-self: center;
+}
+
+#main-nav ul li a {
+  padding: 0.4rem;
+  font-weight: bold;
+}
+
+/* showcase */
+
+#showcase {
+  padding: 0;
+}
+
+#showcase .showcase-container {
+  height: 80vh;
+  padding: 1rem 0;
+}
+
+/* article */
+#home-articles .articles-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child {
+  grid-template-columns: 1fr;
+
+  grid-column: 1;
+}
+
+/* footer */
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+}
+
+#main-footer .footer-container > *:last-child {
+  grid-column: 1 / span 2;
+}
+/* about page */
+
+.page-container {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  margin: 2rem 0;
+  grid-gap: 1rem;
+}
+
+article .meta {
+  flex-direction: column;
+  align-items: start;
+}
+
+.meta small {
+  padding-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  #showcase {
+    padding: 0.2rem;
+  }
+
+  #showcase .showcase-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    padding: 0;
+  }
+
+  #showcase .showcase-header {
+    font-size: 1.5rem;
+  }
+
+  #home-articles .articles-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  #home-articles .container {
+    padding: 0 0.5rem;
+  }
+
+  #about .page-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem 0;
+    grid-gap: 0.5rem;
+    padding: 0;
+  }
+
+  #about .container {
+    padding: 0 0.5rem;
+  }
+
+  #about .card {
+    padding: 0.8rem;
+  }
+
+  #main-footer .footer-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  #main-footer .footer-container > *:last-child {
+    grid-column: 1;
+  }
+
+  .l-heading {
+    font-size: 1.5rem;
+  }
+}
